@@ -1,0 +1,660 @@
+{
+	"info": {
+		"_postman_id": "01267349-dada-461c-8340-5bb1c0af9c86",
+		"name": "PetCare",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22553284"
+	},
+	"item": [
+		{
+			"name": "user-service",
+			"item": [
+				{
+					"name": "Registrar Usuario",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"johndoe\",\r\n  \"password\": \"securepassword123\",\r\n  \"firstName\": \"John\",\r\n  \"middleName\": \"Alexander\",\r\n  \"lastName\": \"Doe\",\r\n  \"secondLastName\": \"Smith\",\r\n  \"phoneNumber\": \"555-1234\",\r\n  \"email\": \"john.doe@example.com\",\r\n  \"address\": \"123 Main St, Springfield, IL, 62701\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/petcare/register/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"petcare",
+								"register",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Veterinario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"drjanevet\",\r\n  \"password\": \"veterinary123\",\r\n  \"firstName\": \"Jane\",\r\n  \"middleName\": \"Marie\",\r\n  \"lastName\": \"Smith\",\r\n  \"secondLastName\": \"Johnson\",\r\n  \"phoneNumber\": \"555-9876\",\r\n  \"email\": \"jane.smith@vetclinic.com\",\r\n  \"address\": \"456 Elm St, Springfield, IL, 62702\",\r\n  \"licenseNumber\": \"VET1234567\",\r\n  \"professionalTitle\": \"Doctor of Veterinary Medicine\",\r\n  \"institution\": \"Springfield Veterinary University\",\r\n  \"specialty\": \"Small Animal Surgery\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/petcare/register/vet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"petcare",
+								"register",
+								"vet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar username",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/petcare/auth-info/johndoe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"petcare",
+								"auth-info",
+								"johndoe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar idUser",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8082/api/petcare/auth-info/details/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"petcare",
+								"auth-info",
+								"details",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Usuarios",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4NzY2NzgzLCJleHAiOjE3NDg3NzAzODN9.DJgDGGEAUcJ-PXr8NZqBxgBv92MHfQCcjYd-VNeb958",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/petcare/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"petcare",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Resumen de Usuario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzU2MjQxLCJleHAiOjE3NDg3NTk4NDF9.kJ5pD0ULSslg42YLAxI_FFgRY7xees5Gw_dPDA48Cbg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/petcare/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"petcare",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Detalles de Usuario Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzYwMTgyLCJleHAiOjE3NDg3NjM3ODJ9.xLeJemdvncoxeha_pz8rAvPP0VqN9FGmIYMBD2v2wmM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/petcare/user/detail/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"petcare",
+								"user",
+								"detail",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Veterinarios",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4NzY2NzgzLCJleHAiOjE3NDg3NzAzODN9.DJgDGGEAUcJ-PXr8NZqBxgBv92MHfQCcjYd-VNeb958",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/petcare/veterinarians",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"petcare",
+								"veterinarians"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Resumen de Veterinario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzYwMTgyLCJleHAiOjE3NDg3NjM3ODJ9.xLeJemdvncoxeha_pz8rAvPP0VqN9FGmIYMBD2v2wmM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/petcare/veterinarian/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"petcare",
+								"veterinarian",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Detalle de Veterinario Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4NzU2NTU3LCJleHAiOjE3NDg3NjAxNTd9.3MTJRPnHAsF4mvoaqbXaSKUUoYOK-HlpAoIpVWLG89c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8082/api/petcare/veterinarian/detail/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"api",
+								"petcare",
+								"veterinarian",
+								"detail",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth-service",
+			"item": [
+				{
+					"name": "LoginVET",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"drjanevet\",\r\n     \"password\": \"veterinary123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/petcare/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"petcare",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LoginUSER",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"username\": \"johndoe\",\r\n     \"password\": \"securepassword123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/petcare/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"petcare",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pet-service",
+			"item": [
+				{
+					"name": "Registrar Mascota - Michi",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzU4NTk0LCJleHAiOjE3NDg3NjIxOTR9.25FpWxFY8UU_XNSDWFGctiuoL8i140SMHZB7q1P1Ue0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Michi\",\r\n  \"species\": \"Cat\",\r\n  \"breed\": \"Mixed-Breed\",\r\n  \"birthDate\": \"2022-05-01\",\r\n  \"weight\": 4.5,\r\n  \"gender\": \"Male\",\r\n  \"userId\": 1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/pets/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"pets",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar Mascota - Nina",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzU4NTk0LCJleHAiOjE3NDg3NjIxOTR9.25FpWxFY8UU_XNSDWFGctiuoL8i140SMHZB7q1P1Ue0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Nina\",\r\n  \"species\": \"Cat\",\r\n  \"breed\": \"Egyptian Mau\",\r\n  \"birthDate\": \"2020-05-01\",\r\n  \"weight\": 3.5,\r\n  \"gender\": \"Female\",\r\n  \"userId\": 1\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/pets/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"pets",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Asignar VET",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzU4NTk0LCJleHAiOjE3NDg3NjIxOTR9.25FpWxFY8UU_XNSDWFGctiuoL8i140SMHZB7q1P1Ue0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"petId\": 1,\r\n  \"vetId\": 2\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/api/pets/assign-vet",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"pets",
+								"assign-vet"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar mascotas por USER",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzYwMTgyLCJleHAiOjE3NDg3NjM3ODJ9.xLeJemdvncoxeha_pz8rAvPP0VqN9FGmIYMBD2v2wmM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/pets/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"pets",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Mascota y Veterinario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzYwMTgyLCJleHAiOjE3NDg3NjM3ODJ9.xLeJemdvncoxeha_pz8rAvPP0VqN9FGmIYMBD2v2wmM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/pets/1/vet/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"pets",
+								"1",
+								"vet",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar mascotas por VET",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzY2OTQyLCJleHAiOjE3NDg3NzA1NDJ9.c9g5p0sMXOHiQgZ_VoPj6MfxjE9Z1zyxgwBy4I25TwE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/pets/vet/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"pets",
+								"vet",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Mascota y Dueño",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzY2OTQyLCJleHAiOjE3NDg3NzA1NDJ9.c9g5p0sMXOHiQgZ_VoPj6MfxjE9Z1zyxgwBy4I25TwE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/api/pets/1/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"api",
+								"pets",
+								"1",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

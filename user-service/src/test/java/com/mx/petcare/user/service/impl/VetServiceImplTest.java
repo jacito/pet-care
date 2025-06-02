@@ -167,7 +167,6 @@ class VetServiceImplTest {
         assertEquals("Veterinarian not found", ex.getMessage());
     }
 
-    // Helper method para crear una entidad Vet para pruebas
     private UserPetCare createVetEntity(Long id, String fullName, String specialty) {
         VetProfile vetProfile = VetProfile.builder()
                 .licenseNumber("LIC12345")
