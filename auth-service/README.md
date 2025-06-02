@@ -48,8 +48,10 @@ El token generado permite acceder a los endpoints protegidos de otros microservi
 
 - **Autenticación en otros servicios:**  
   Todos los microservicios protegidos deben recibir el token en el encabezado `Authorization`:
-
-
+  
+```http
+Authorization: Bearer <token>
+```
 ---
 
 ## 🧱 Estructura y Diagrama de Clases
