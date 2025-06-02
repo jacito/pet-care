@@ -46,7 +46,8 @@ El sistema está dividido en los siguientes microservicios:
 
 ## 📁 Estructura del proyecto
 
-(https://github.com/jacito/pet-care-imagenes/blob/main/Estructura/Basica.png)
+![Estructura del proyecto](https://github.com/jacito/pet-care-imagenes/raw/main/Estructura/Basica.png)
+
 
 ---
 
@@ -58,16 +59,13 @@ En la raíz del proyecto (`petcare/`), ejecuta:
 
 ```bash
 docker-compose up --build
+``` 
 
 Esto construirá las imágenes y levantará los tres servicios en los puertos:
 
 - auth-service: `localhost:8081`
 - user-service: `localhost:8082`
 - pet-service: `localhost:8083`
-
----
-
----
 
 ## 📌 Pendientes y mejoras futuras
 
@@ -84,13 +82,15 @@ Proyecto desarrollado por **Jazmín Velázquez** como parte del Bootcamp de Micr
 
 ---
 
-## Contacto
+## 📇 Contacto
 
-| ![Jacito](https://github.com/jacito/pet-care-imagenes/blob/main/Perfil/Jacito.jpg)   | 
-| -------------------------------------------------| 
-| [GitHub](https://github.com/jacito)              | 
-| [LinkedIn](https://www.linkedin.com/in/jacito/)  |
+| ![Jacito](https://github.com/jacito/pet-care-imagenes/raw/main/Perfil/Jacito.jpg) | [GitHub](https://github.com/jacito)<br>[LinkedIn](https://www.linkedin.com/in/jacito/) |
+|:--:|:--:|
+| ******* | **Redes de contacto** |
 
+
+
+---
 
 ¡Gracias por visitar el proyecto PetCare! 🐾
 
