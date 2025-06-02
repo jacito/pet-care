@@ -20,12 +20,12 @@ El sistema está dividido en los siguientes microservicios:
 ## 🚀 Características principales
 
 - Registro y autenticación de usuarios (dueños y veterinarios) con JWT.
-- Gestión de mascotas: creación, asociación con usuarios y veterinarios, y consultas.
+- Gestión de mascotas: creación, asociación con usuarios y veterinarios.
 - Arquitectura desacoplada con microservicios (`auth-service`, `user-service`, `pet-service`).
 - Comunicación entre servicios usando OpenFeign y WebClient.
 - Seguridad mediante Spring Security.
 - Documentación de APIs con Swagger/OpenAPI.
-- Base de datos H2 (modo desarrollo) y PostgreSQL (modo producción).
+- Base de datos H2 (modo desarrollo).
 
 ---
 
@@ -76,7 +76,7 @@ Esto construirá las imágenes y levantará los tres servicios en los puertos:
 ## 📌 Pendientes y mejoras futuras
 
 - Integración con GitHub Actions para CI/CD.
-- Implementación de pruebas unitarias y de integración.
+- Implementación de pruebas de integración.
 - Mejoras en validaciones de negocio y manejo de errores global.
 - Despliegue a un entorno cloud (Heroku, AWS, etc.).
 
