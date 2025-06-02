@@ -11,6 +11,51 @@
 - **Lombok**: Para reducir la cantidad de código boilerplate.
 - **Maven**: Para la gestión de dependencias y construcción del proyecto.
 
+## 🧩 Microservicios
+
+- **auth-service** → Gestión de login y autenticación con JWT.
+- **user-service** → Registro y consulta de datos de usuarios y veterinarios.
+- **pet-service** → Registro de mascotas, asignación de veterinarios y consultas.
+
+---
+
+## 📌 Servicios y Endpoints
+
+### 🔐 Auth-Service
+
+| Acción                | Endpoint               | Método |
+|-----------------------|------------------------|--------|
+| Registro de usuario   | `/api/auth/register`   | POST   |
+| Login                 | `/api/auth/login`      | POST   |
+
+---
+
+### 👤 User-Service (usuario y veterinario)
+
+| Acción                          | Endpoint                            | Método |
+|---------------------------------|-------------------------------------|--------|
+| Registrar veterinario           | `/api/petcare/register/vet`        | POST   |
+| Obtener todos los veterinarios  | `/api/petcare/veterinarians`       | GET    |
+| Ver veterinario por ID          | `/api/petcare/veterinarian/{id}`   | GET    |
+| Ver detalle veterinario por ID  | `/api/petcare/veterinarian/detail/{id}` | GET  |
+
+---
+
+### 🐶 Pet-Service
+
+| Acción                                    | Endpoint                                | Método |
+|-------------------------------------------|-----------------------------------------|--------|
+| Registrar mascota                         | `/api/petcare/register/pet`             | POST   |
+| Obtener mascotas del usuario              | `/api/petcare/pets`                     | GET    |
+| Ver mascota por ID                        | `/api/petcare/pet/{id}`                 | GET    |
+| Ver detalle mascota + veterinario         | `/api/petcare/pet/detail/{id}`          | GET    |
+| Asignar veterinario a mascota             | `/api/petcare/assign-vet`              | POST   |
+| Obtener mascotas asignadas al veterinario | `/api/petcare/vet/pets`                | GET    |
+| Ver mascota + detalle de dueño            | `/api/petcare/vet/pet/detail/{id}`     | GET    |
+
+---
+
+
 ## 🐾 Descripción de los Microservicios
 
 ### 1. 📦 `auth-service`
@@ -118,4 +163,52 @@ Recuerda configurar el `secret` para los tokens JWT en el archivo `application.p
 
 ![jws Secret](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Configuracion/secret.png)
 
+---
+
+## 🔄 Flujos de Usuario y Veterinario
+
+### 👤 Usuario - Flujo de Acciones
+
+| Paso | Acción                                    | Endpoint                                | Método |
+|------|-------------------------------------------|-----------------------------------------|--------|
+| 1    | Crear cuenta de usuario                   | `/api/auth/register`                    | POST   |
+| 2    | Login                                      | `/api/auth/login`                       | POST   |
+| 3    | Agregar mascota                            | `/api/petcare/register/pet`             | POST   |
+| 4    | Consultar mascotas registradas             | `/api/petcare/pets`                     | GET    |
+| 5    | Consultar detalle de una mascota           | `/api/petcare/pet/{id}`                 | GET    |
+| 6    | Consultar veterinarios disponibles         | `/api/petcare/veterinarians`            | GET    |
+| 7    | Asignar veterinario a mascota              | `/api/petcare/assign-vet`               | POST   |
+| 8    | Consultar mascota + detalle de veterinario | `/api/petcare/pet/detail/{id}`          | GET    |
+
+
+- **Crear Usuario:** `POST /api/auth/register`
+- **Iniciar Sesión:** `POST /api/auth/login`
+- **Agregar Mascota:** `POST /api/petcare/register/pet`
+- **Consultar Mascotas Registradas:** `GET /api/petcare/pets`
+- **Consultar Detalle de Mascota:** `GET /api/petcare/pet/{id}`
+- **Consultar Veterinarios Disponibles:** `GET /api/petcare/veterinarians`
+- **Asignar Veterinario a Mascota:** `POST /api/petcare/assign-vet`
+- **Consultar Detalle de Mascota con Veterinario Asignado:** `GET /api/petcare/pet/detail/{id}`
+
+
+  ![Flujo Usuario](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/DiagramaFlujoUsuario.jpeg)
+---
+
+### 🩺 Veterinario - Flujo de Acciones
+
+| Paso | Acción                                      | Endpoint                             | Método |
+|------|---------------------------------------------|--------------------------------------|--------|
+| 1    | Crear cuenta de veterinario                 | `/api/petcare/register/vet`         | POST   |
+| 2    | Login                                       | `/api/auth/login`                   | POST   |
+| 3    | Consultar mascotas asignadas                | `/api/petcare/vet/pets`             | GET    |
+| 4    | Consultar detalle de mascota + dueño        | `/api/petcare/vet/pet/detail/{id}`  | GET    |
+
+---
+
+### 🩺 Veterinario
+
+- **Crear Veterinario:** `POST /api/petcare/register/vet`
+- **Iniciar Sesión:** `POST /api/auth/login`
+- **Consultar Mascotas Asignadas:** `GET /api/petcare/vet/pets`
+- **Consultar Detalle de Mascota y Dueño:** `GET /api/petcare/vet/pet/detail/{id}`
 ---
