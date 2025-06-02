@@ -152,13 +152,13 @@ Puedes acceder a la documentación de la API en la siguiente URL después de lev
 http://localhost:8081/swagger-ui/index.html
 ```
 
-### Endpoint de Login
+### 📘 Endpoint de Login
 
 - **URL:** `/api/petcare/auth/login`
 - **Método:** `POST`
 - **Descripción:** Este endpoint permite a los usuarios iniciar sesión en la plataforma. Recibe un `LoginRequest` con el nombre de usuario y la contraseña. Si las credenciales son correctas, se devuelve un token JWT para realizar futuras solicitudes. En caso contrario, se devuelve un mensaje de error.
 
-#### Parámetros
+**📥 Parámetros
 
 - **Request Body:**
 
@@ -171,7 +171,7 @@ http://localhost:8081/swagger-ui/index.html
 
 #### Respuestas
 
-- **Código 200 - Login exitoso:**
+- ** ✅ Código 200 - Login exitoso:**
   
   Si las credenciales son correctas, se devuelve un JWT token para acceder a otros endpoints del sistema.
 
@@ -181,7 +181,7 @@ http://localhost:8081/swagger-ui/index.html
 }
 ```
 
-#### Código 401 - Credenciales inválidas:
+#### 🚫 Código 401 - Credenciales inválidas:
 
 Si las credenciales proporcionadas (nombre de usuario o contraseña) son incorrectas, el servicio devuelve un mensaje de error.
 
@@ -195,7 +195,7 @@ Si las credenciales proporcionadas (nombre de usuario o contraseña) son incorre
 
 ### 📝 Ejemplo de Respuesta
 
-#### Respuesta Exitosa (200)
+#### ✅ Respuesta Exitosa (200)
 
 Cuando el login es exitoso, el servicio devuelve un JWT token. Este token puede ser utilizado en solicitudes futuras para acceder a recursos protegidos.
 
@@ -205,7 +205,7 @@ Cuando el login es exitoso, el servicio devuelve un JWT token. Este token puede 
 }
 ```
 
-#### Respuesta de Error (401) - Credenciales inválidas
+#### 🚫 Respuesta de Error (401) - Credenciales inválidas
 
 Si las credenciales proporcionadas no son correctas, el servicio devuelve un error con el código de estado 401 (No autorizado). Esto indica que las credenciales son inválidas.
 
@@ -217,7 +217,7 @@ Si las credenciales proporcionadas no son correctas, el servicio devuelve un err
 }
 ```
 
-#### Respuesta de Error (500) - Error Interno del Servidor
+#### 💥 Respuesta de Error (500) - Error Interno del Servidor
 
 Si ocurre un error inesperado en el servidor, como problemas de conexión a la base de datos o errores de lógica interna, el servicio devolverá un código de estado 500 (Error Interno del Servidor). Esto indica que el servidor encontró una condición inesperada que le impidió cumplir con la solicitud.
 
