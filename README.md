@@ -86,7 +86,7 @@ Proyecto desarrollado por **Jazmín Velázquez** como parte del Bootcamp de Micr
 
 | ![Jacito](https://github.com/jacito/pet-care-imagenes/raw/main/Perfil/Jacito.jpg) | [GitHub](https://github.com/jacito)<br>[LinkedIn](https://www.linkedin.com/in/jacito/) |
 |:--:|:--:|
-| ******* | **Redes de contacto** |
+
 
 
 
