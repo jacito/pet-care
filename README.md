@@ -203,12 +203,11 @@ Recuerda configurar el `secret` para los tokens JWT en el archivo `application.p
 | 3    | Consultar mascotas asignadas                | `/api/petcare/vet/pets`             | GET    |
 | 4    | Consultar detalle de mascota + dueño        | `/api/petcare/vet/pet/detail/{id}`  | GET    |
 
----
-
-### 🩺 Veterinario
 
 - **Crear Veterinario:** `POST /api/petcare/register/vet`
 - **Iniciar Sesión:** `POST /api/auth/login`
 - **Consultar Mascotas Asignadas:** `GET /api/petcare/vet/pets`
 - **Consultar Detalle de Mascota y Dueño:** `GET /api/petcare/vet/pet/detail/{id}`
+
+    ![Flujo Veterinario](https://github.com/jacito/pet-care-imagenes/blob/main/Servicios/DiagramaFlujoVeterinario.jpeg)
 ---
