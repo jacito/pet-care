@@ -46,11 +46,7 @@ El sistema está dividido en los siguientes microservicios:
 
 ## 📁 Estructura del proyecto
 
-petcare/
-├── auth-service/ # Servicio de autenticación y emisión de tokens JWT
-├── user-service/ # Gestión y verificación de usuarios
-├── pet-service/ # Gestión de mascotas y asignación de veterinarios
-└── docker-compose.yml # Orquestación de los microservicios con Docker
+(https://github.com/jacito/pet-care-imagenes/blob/main/Estructura/Basica.png)
 
 ---
 
