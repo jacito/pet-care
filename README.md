@@ -248,8 +248,8 @@ Este video muestra pruebas funcionales realizadas a los endpoints principales de
 - 👤 User Service (gestión de usuarios y veterinarios)
 - 🐾 Pet Service (registro, asignación y consulta de mascotas)
 
-![Ver video de pruebas](https://youtu.be/JPGA_dIUwrw)
 
+[![Ver video de pruebas](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/PruebasEndpoints.png)](https://youtu.be/JPGA_dIUwrw)
 
 ---
 ---
