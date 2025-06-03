@@ -103,8 +103,8 @@ El `Dockerfile` permite empaquetar el microservicio en una imagen Docker lista p
 
 ```dockerfile
 FROM openjdk:17-jdk-slim
-COPY target/user-service.jar auth-service.jar
-ENTRYPOINT ["java", "-jar", "auth-service.jar"]
+COPY target/user-service.jar user-service.jar
+ENTRYPOINT ["java", "-jar", "user-service.jar"]
 ```
 
  ![Dockerfile](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/User/Dockerfile.png)
