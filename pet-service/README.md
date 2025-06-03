@@ -564,13 +564,11 @@ Devuelve una lista de mascotas asociadas al usuario.
 
   ✅ **Código 200 - Veterinario asignado correctamente:**
 
-  ```text
+ ```text
   Veterinarian assigned successfully
 ```
 
-
-
-  ![Swagger aut-service](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/Pet/swagger.png)
+![Swagger aut-service](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/Pet/swagger.png)
 
 ### 🧪 Test
 
@@ -585,6 +583,14 @@ Puedes utilizar esta colección para probar los endpoints del microservicio `pet
 🔗 [Ver colección en Postman](https://github.com/jacito/pet-care/blob/425b6883b3da87d7577012c00df7a13f1253b361/PetCare.postman_collection.json)
 
   ![CollectionPostmant](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/Pet/Postmant.png)
+
+- **No se te olvide descargar los Environments**
+🔗 [Ver EnvironmentLocal en Postman](https://github.com/jacito/pet-care/blob/develop/PetCare-Local.postman_environment.json)
+  ![EnvironmentLocal](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/EnvironmentLocal.png)
+
+🔗 [Ver EnvironmentProd en Postman](https://github.com/jacito/pet-care/blob/develop/PetCare-Prod.postman_environment.json)
+  ![EnvironmentProd](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/EnvironmentProd.png)
+
 
 ### 🚀 Arranque del Servicio
 
