@@ -81,36 +81,36 @@ Authorization: Bearer <token>
 ## 📘 Diagrama Simplificado de Clases
 
 ```plaintext
-+---------------------+
-|     PetController   |
-+---------------------+
-| - petService        |
-+---------------------+
-| +createPet()        |
-| +getPetsByUser()    |
-| +getPetsByVet()     |
++------------------------+
+|       PetController    |
++------------------------+
+| - petService           |
++------------------------+
+| +createPet()           |
+| +getPetsByUser()       |
+| +getPetsByVet()        |
 | +getPetDetailForUser() |
-| +getPetDetailForVet() |
-| +assignVet()        |
-+---------------------+
+| +getPetDetailForVet()  |
+| +assignVet()           |
++------------------------+
 
            |
            v
 
-+---------------------+
-|      PetService     |
-+---------------------+
-| - petRepository     |
-| - webClient         |
-+---------------------+
-| +createPet()        |
-| +petExists()        |
-| +getPetsByUserId()  |
-| +getPetsByVetId()   |
-| +getPetDetailsForUser() |
-| +getPetDetailsForVet()  |
-| +assignVeterinarian()   |
-+---------------------+
++--------------------------+
+|        PetService        |
++--------------------------+
+| - petRepository          |
+| - webClient              |
++--------------------------+
+| +createPet()             |
+| +petExists()             |
+| +getPetsByUserId()       |
+| +getPetsByVetId()        |
+| +getPetDetailsForUser()  |
+| +getPetDetailsForVet()   |
+| +assignVeterinarian()    |
++--------------------------+
 
            |
            v
@@ -127,12 +127,12 @@ Authorization: Bearer <token>
 | - vetId: Long       |
 +---------------------+
 
-+-----------------------------+       +-------------------------------+
-|       CreatePetRequest      |       |       AssignVetRequest        |
-+-----------------------------+       +-------------------------------+
++-----------------------------+       +--------------------------------+
+|       CreatePetRequest      |       |       AssignVetRequest         |
++-----------------------------+       +--------------------------------+
 | - name                      |       | - petId                        |
 | - species                   |       | - vetId                        |
-| - breed                     |       +-------------------------------+
+| - breed                     |       +--------------------------------+
 | - birthDate                 |
 | - userId                    |
 +-----------------------------+
