@@ -163,6 +163,7 @@ APIs relacionadas con el registro general de usuarios y su consulta para soporte
 **📥 Parámetros**
 - **Path Variable:** `username` — Nombre de usuario a buscar.
 
+
 **✅ Respuesta Exitosa (200)**
 ```json
 {
@@ -201,6 +202,16 @@ APIs relacionadas con el registro general de usuarios y su consulta para soporte
 **📥 Parámetros**
 - **Path Variable:** `id` — Identificador único del usuario.
 
+
+**Cabecera requerida**:  
+Debe incluir el token JWT válido obtenido tras el login.
+
+```http
+Authorization: Bearer <jwt-token>
+
+eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4ODY5ODY2LCJleHAiOjE3NDg4NzM0NjZ9.paF0PMztEiGVbplInrN1qNvD5OdUhS2Fhe_9gaNz2ns
+```
+
 ---
 
 **✅ Respuesta Exitosa (200)**
@@ -236,6 +247,15 @@ APIs relacionadas con el registro general de usuarios y su consulta para soporte
 
 ## 👤 Gestión de usuarios
 APIs relacionadas con el registro y consulta de usuarios en el sistema **PetCare**.
+
+###Cabecera requerida:  
+Debe incluir el token JWT válido obtenido tras el login.
+
+```http
+Authorization: Bearer <jwt-token>
+
+eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4ODY5ODY2LCJleHAiOjE3NDg4NzM0NjZ9.paF0PMztEiGVbplInrN1qNvD5OdUhS2Fhe_9gaNz2ns
+```
 
 #### 🧾 Respuestas Compartidas
 
@@ -309,16 +329,6 @@ Si el nombre de usuario o el correo electrónico ya están en uso, el servicio r
 **📥 Parámetros**
 Este endpoint no requiere parámetros en la URL ni en el cuerpo de la solicitud.  
 
-**Cabecera requerida**:  
-Debe incluir el token JWT válido obtenido tras el login.
-
-```http
-Authorization: Bearer <jwt-token>
-
-eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4ODY5ODY2LCJleHAiOjE3NDg4NzM0NjZ9.paF0PMztEiGVbplInrN1qNvD5OdUhS2Fhe_9gaNz2ns
-```
-
-
  ✅ **Respuesta Exitosa - 200 OK**
 Retorna una lista de usuarios con su información básica (id y nombre completo).
 
@@ -347,16 +357,6 @@ Retorna una lista de usuarios con su información básica (id y nombre completo)
 |----------|--------|-------------------------|-----------|
 | Path     | `id`   | ID del usuario a buscar | ✅ Sí     |
 
-**Cabecera requerida**:  
-Debe incluir el token JWT válido obtenido tras el login.
-
-```http
-Authorization: Bearer <jwt-token>
-
-eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4ODY5ODY2LCJleHAiOjE3NDg4NzM0NjZ9.paF0PMztEiGVbplInrN1qNvD5OdUhS2Fhe_9gaNz2ns
-```
-
-
 **✅ Respuesta Exitosa - 200**
 Devuelve la información básica del usuario solicitado.
 
@@ -379,16 +379,6 @@ Devuelve la información básica del usuario solicitado.
 |----------|--------|-------------------------|-----------|
 | Path     | `id`   | ID del usuario a buscar | ✅ Sí     |
 
-**Cabecera requerida**:  
-Debe incluir el token JWT válido obtenido tras el login.
-
-```http
-Authorization: Bearer <jwt-token>
-
-eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4ODY5ODY2LCJleHAiOjE3NDg4NzM0NjZ9.paF0PMztEiGVbplInrN1qNvD5OdUhS2Fhe_9gaNz2ns
-```
-
-
 ✅ **Respuesta Exitosa - 200 OK**  
 Devuelve la información detallada del usuario solicitado.
 
@@ -406,6 +396,15 @@ Devuelve la información detallada del usuario solicitado.
 ## 🩺 Gestion de veterinarios
 
 APIs relacionadas con la consulta de veterinarios en el sistema **PetCare**.
+
+###Cabecera requerida:  
+Debe incluir el token JWT válido obtenido tras el login.
+
+```http
+Authorization: Bearer <jwt-token>
+
+eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4ODY5ODY2LCJleHAiOjE3NDg4NzM0NjZ9.paF0PMztEiGVbplInrN1qNvD5OdUhS2Fhe_9gaNz2ns
+```
 
 #### 🧾 Respuestas Compartidas
 
