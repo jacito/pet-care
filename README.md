@@ -67,6 +67,33 @@ Esto construirá las imágenes y levantará los tres servicios en los puertos:
 - user-service: `localhost:8082`
 - pet-service: `localhost:8083`
 
+## 🐋 Docker Hub - Imagen del Servicio
+
+Las imagenes de los servicios de PetCare ya se encuentra disponible en **Docker Hub** para que puedas realizar pruebas fácilmente.
+
+![Imagenes](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/Imagenes.png)
+
+### 📥 Cómo descargar las imagen
+
+Puedes descargar la imagen ejecutando el siguiente comando en tu terminal:
+
+```bash
+docker pull jacito/auth-service:tagname
+```
+
+![Imagen auth-service](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/Auth/Image.png)
+
+```bash
+docker pull jacito/user-service:tagname
+```
+![Imagen user-service](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/User/Image.png)
+
+```bash
+docker pull jacito/pet-service:tagname
+```
+![Imagen pet-service](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/Pet/Image.png)
+
+
 ## 📌 Pendientes y mejoras futuras
 
 - Integración con GitHub Actions para CI/CD.
