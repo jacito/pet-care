@@ -295,6 +295,14 @@ Puedes descargar la imagen ejecutando el siguiente comando en tu terminal:
 docker pull jacito/auth-service:tagname
 ```
 
+## 🔐 Auth-Service desplegado en Render
 
+El microservicio `auth-service` ha sido desplegado como un **Web Service** en la plataforma [Render.com](https://render.com), utilizando la imagen `jacito/auth-service:latest` alojada en Docker Hub.
+
+- 📦 **Imagen Docker:** `jacito/auth-service:latest`  
+- 🌐 **URL pública:** [https://auth-service-latest-s4l3.onrender.com](https://auth-service-latest-s4l3.onrender.com)  
+- 🚀 **Proveedor:** Render (Web Service - Free Tier)
+
+  ![onrender](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/Auth/onrender.png)
 
 
