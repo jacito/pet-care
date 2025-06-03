@@ -562,3 +562,17 @@ mvn spring-boot:run
 
   ![Arrancar aut-service](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/User/run.png)
 
+
+## 🐋 Docker Hub - Imagen del Servicio `user-service`
+
+La imagen del servicio **user-service** ya se encuentra disponible en **Docker Hub** para que puedas realizar pruebas fácilmente.
+
+  ![Image](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/User/Image.png)
+
+### 📥 Cómo descargar la imagen
+
+Puedes descargar la imagen ejecutando el siguiente comando en tu terminal:
+
+```bash
+docker pull jacito/user-service:tagname
+```
