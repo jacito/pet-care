@@ -102,6 +102,28 @@ docker pull jacito/pet-service:tagname
 - Despliegue a un entorno cloud (Heroku, AWS, etc.).
 
 ---
+---
+
+## 📚 Estructura de la Documentación
+
+La documentación de este proyecto está organizada en varias secciones clave para facilitar la navegación y comprensión de los diferentes servicios. Cada sección está enfocada en un aspecto específico del sistema.
+
+### 🌍 Estructura General del Proyecto
+
+La estructura de la documentación está dividida en las siguientes ramas y servicios:
+
+- **main**: Contiene la documentación principal y la visión general del proyecto.
+- **develop**: Sección dedicada a los avances en desarrollo y mejoras continuas. Aquí puedes encontrar la documentación más reciente sobre las características en desarrollo.
+  - **auth-service**: Documentación específica sobre el servicio de autenticación, configuración de JWT y seguridad.
+  - **user-service**: Descripción detallada del servicio que maneja la gestión de usuarios, registro, login y datos de los mismos.
+  - **pet-service**: Detalles sobre el servicio que gestiona el control de mascotas, incluyendo la creación, asignación y consulta de información sobre las mascotas.
+
+Cada una de estas secciones proporciona información específica para su respectivo servicio, facilitando el proceso de integración, pruebas y desarrollo.
+
+¡No dudes en navegar entre las secciones para obtener toda la información que necesitas para trabajar con cada microservicio!
+
+---
+---
 
 ## 👩‍💻 Autora
 
