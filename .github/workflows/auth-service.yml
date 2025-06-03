@@ -1,0 +1,33 @@
+name: Build and Push auth-service Docker Image
+
+on:
+  push:
+    paths:
+      - 'auth-service/**'  # Ejecutar el workflow solo si hay cambios en el directorio 'auth-service'
+    branches:
+      - develop  # Se ejecuta solo cuando haya un push a la rama 'develop'
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest  # Usa un runner de Ubuntu para ejecutar el workflow
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3  # Obtiene el código fuente del repositorio
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3  # Configura Buildx para la construcción de imágenes Docker
+
+    - name: Log in to Docker Hub
+      uses: docker/login-action@v2  # Inicia sesión en Docker Hub
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}  # Usa el secret DOCKER_USERNAME
+        password: ${{ secrets.DOCKER_PASSWORD }}  # Usa el secret DOCKER_PASSWORD
+
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v5  # Usa la acción de Buildx para construir y subir la imagen
+      with:
+        context: ./auth-service  # El contexto es la carpeta del microservicio 'auth-service'
+        file: ./auth-service/Dockerfile  # Especifica el Dockerfile dentro del servicio
+        push: true  # Esto asegura que la imagen se suba al Docker Hub
+        tags: jacito/auth-service:latest  # La etiqueta de la imagen (puedes cambiarla por la de tu elección)
