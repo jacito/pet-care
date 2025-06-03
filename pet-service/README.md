@@ -630,3 +630,13 @@ Puedes descargar la imagen ejecutando el siguiente comando en tu terminal:
 ```bash
 docker pull jacito/pet-service:tagname
 ```
+
+## 👤 User-Service desplegado en Render
+
+El microservicio `user-service` ha sido desplegado como un **Web Service** en la plataforma [Render.com](https://render.com), utilizando la imagen `jacito/user-service:latest` alojada en Docker Hub.
+
+- 📦 **Imagen Docker:** `jacito/user-service:latest`  
+- 🌐 **URL pública:** [https://user-service-latest-3ed3.onrender.com](https://user-service-latest-3ed3.onrender.com)  
+- 🚀 **Proveedor:** Render (Web Service - Free Tier)
+
+  ![onrender](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/User/onrender.png)
