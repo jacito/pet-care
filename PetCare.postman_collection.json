@@ -2,10 +2,85 @@
 	"info": {
 		"_postman_id": "01267349-dada-461c-8340-5bb1c0af9c86",
 		"name": "PetCare",
+		"description": "Conjunto de endpoints de pruebas locales, correspondientes al proyecto final de bootcamp de \"Microservicios con Java\", de la plataforma de gestión de la salud de las mascotas, cuyo objetivo principal es permitir a los usuarios gestionar las citas y el control de salud de sus mascotas. Actualmente, se cuenta con los servicios de login, gestión de usuario, veterinarios y mascotas.\n\nEste proyecto está compuesto por tres microservicios principales:\n\n- **auth-service**: Autenticación de usuarios (login, generación de token JWT).\n    \n- **user-service**: Gestión de usuarios (registro y consulta de usuarios). Gestión de veterinarios (registro y consulta de veterinarios).\n    \n- **pet-service**: Gestión de mascotas (registro, asignación de dueños y veterinarios, gestión).\n    \n---\n\nThis collection of local test endpoints corresponds to the final project for the \"Microservices with Java\" bootcamp, for a pet health management platform. The main goal of the project is to allow users to manage their pets' appointments and health records. Currently, the services include login, user management, veterinarian management, and pet management.\n\nThis project consists of three main microservices:\n\n- **auth-service**: User authentication (login, JWT token generation).\n    \n- **user-service**: User management (registration and user lookup). Veterinarian management (registration and veterinarian lookup).\n    \n- **pet-service**: Pet management (registration, assignment of owners and veterinarians, management).",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "22553284"
 	},
 	"item": [
+		{
+			"name": "auth-service",
+			"item": [
+				{
+					"name": "LoginVET",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"drjanevet\",\r\n     \"password\": \"veterinary123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/petcare/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"petcare",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LoginUSER",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"username\": \"johndoe\",\r\n     \"password\": \"securepassword123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/petcare/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"petcare",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "`auth-service` es el microservicio encargado de la autenticación y autorización de los usuarios en la plataforma. Su función principal es validar las credenciales de los usuarios (tanto comunes como veterinarios), generar un token JWT para la autenticación de solicitudes, y gestionar el acceso a los recursos protegidos.\n\n---\n\n`auth-service` is the microservice responsible for authentication and authorization of users in the platform. Its main function is to validate user credentials (both regular users and veterinarians), generate a JWT token for request authentication, and manage access to protected resources."
+		},
 		{
 			"name": "user-service",
 			"item": [
@@ -198,7 +273,7 @@
 					"response": []
 				},
 				{
-					"name": "Consultar Detalles de Usuario Copy",
+					"name": "Consultar Detalles de Usuario",
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -294,7 +369,7 @@
 					"response": []
 				},
 				{
-					"name": "Consultar Detalle de Veterinario Copy",
+					"name": "Consultar Detalle de Veterinario",
 					"request": {
 						"auth": {
 							"type": "bearer",
@@ -326,80 +401,8 @@
 					},
 					"response": []
 				}
-			]
-		},
-		{
-			"name": "auth-service",
-			"item": [
-				{
-					"name": "LoginVET",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"drjanevet\",\r\n     \"password\": \"veterinary123\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8081/api/petcare/auth/login",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8081",
-							"path": [
-								"api",
-								"petcare",
-								"auth",
-								"login"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "LoginUSER",
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n     \"username\": \"johndoe\",\r\n     \"password\": \"securepassword123\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8081/api/petcare/auth/login",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8081",
-							"path": [
-								"api",
-								"petcare",
-								"auth",
-								"login"
-							]
-						}
-					},
-					"response": []
-				}
-			]
+			],
+			"description": "`user-service` es el microservicio encargado de gestionar la información de los usuarios registrados en la plataforma. Esto incluye el registro, la obtención de información básica del perfil del usuario y la gestión de sus datos. Este servicio también interactúa con el servicio de autenticación (`auth-service`) para validar las credenciales de los usuarios durante el proceso de login y autenticación.\n\n---\n\n`user-service` is the microservice responsible for managing the information of registered users on the platform. This includes registration, retrieving basic user profile information, and managing user data. This service also interacts with the authentication service (`auth-service`) to validate user credentials during the login and authentication process.\n"
 		},
 		{
 			"name": "pet-service",
@@ -654,7 +657,8 @@
 					},
 					"response": []
 				}
-			]
+			],
+			"description": "`pet-service` es el microservicio encargado de gestionar la información y los detalles relacionados con las mascotas registradas en la plataforma. Este servicio permite crear y consultar mascotas, asociarlas con un dueño o un veterinario, y acceder a los detalles de la mascota según el rol del usuario (dueño o veterinario).\n\n---\n\n`pet-service` is the microservice responsible for managing the information and details related to pets registered on the platform. This service allows creating and querying pets, associating them with an owner or a veterinarian, and accessing pet details based on the user's role (owner or veterinarian)."
 		}
 	]
 }
