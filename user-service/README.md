@@ -91,7 +91,7 @@ jwt.expiration=86400000
 ```
   ![application.properties](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/User/applicationProperties.png)
 
-- `server.port`: Puerto en el que se ejecuta el microservicio `auth-service`.
+- `server.port`: Puerto en el que se ejecuta el microservicio `pet-service`.
 - `jwt.secret`: Clave secreta utilizada para firmar los tokens JWT, asegurando su integridad.
 - `jwt.expiration`: Tiempo de expiración del token en milisegundos (por ejemplo, 86400000 equivale a 24 horas).
 
@@ -532,7 +532,7 @@ Puedes usar herramientas como **Postman** o **Curl** para probar los endpoint de
 
 ### 📬 Colección de Postman
 
-Puedes utilizar esta colección para probar los endpoints del microservicio `auth-service`.
+Puedes utilizar esta colección para probar los endpoints del microservicio `pet-service`.
 
 🔗 [Ver colección en Postman](https://github.com/jacito/pet-care/blob/425b6883b3da87d7577012c00df7a13f1253b361/PetCare.postman_collection.json)
 
