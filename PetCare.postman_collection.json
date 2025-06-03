@@ -28,12 +28,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/api/petcare/auth/login",
-							"protocol": "http",
+							"raw": "{{urlAuthService}}/api/petcare/auth/login",
 							"host": [
-								"localhost"
+								"{{urlAuthService}}"
 							],
-							"port": "8081",
 							"path": [
 								"api",
 								"petcare",
@@ -62,12 +60,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/api/petcare/auth/login",
-							"protocol": "http",
+							"raw": "{{urlAuthService}}/api/petcare/auth/login",
 							"host": [
-								"localhost"
+								"{{urlAuthService}}"
 							],
-							"port": "8081",
 							"path": [
 								"api",
 								"petcare",
@@ -102,12 +98,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8082/api/petcare/register/user",
-							"protocol": "http",
+							"raw": "{{urlUserService}}/api/petcare/register/user",
 							"host": [
-								"localhost"
+								"{{urlUserService}}"
 							],
-							"port": "8082",
 							"path": [
 								"api",
 								"petcare",
@@ -133,12 +127,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8082/api/petcare/register/vet",
-							"protocol": "http",
+							"raw": "{{urlUserService}}/api/petcare/register/vet",
 							"host": [
-								"localhost"
+								"{{urlUserService}}"
 							],
-							"port": "8082",
 							"path": [
 								"api",
 								"petcare",
@@ -155,12 +147,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/api/petcare/auth-info/johndoe",
-							"protocol": "http",
+							"raw": "{{urlUserService}}/api/petcare/auth-info/johndoe",
 							"host": [
-								"localhost"
+								"{{urlUserService}}"
 							],
-							"port": "8082",
 							"path": [
 								"api",
 								"petcare",
@@ -192,12 +182,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8082/api/petcare/auth-info/details/1",
-							"protocol": "http",
+							"raw": "{{urlUserService}}/api/petcare/auth-info/details/1",
 							"host": [
-								"localhost"
+								"{{urlUserService}}"
 							],
-							"port": "8082",
 							"path": [
 								"api",
 								"petcare",
@@ -217,7 +205,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4NzY2NzgzLCJleHAiOjE3NDg3NzAzODN9.DJgDGGEAUcJ-PXr8NZqBxgBv92MHfQCcjYd-VNeb958",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4OTIyMDI1LCJleHAiOjE3NDg5MjU2MjV9.N6SbyK6HXANkuGmBudZZvJ7PNl_FqgcWXjKfrO3yA-o",
 									"type": "string"
 								}
 							]
@@ -225,12 +213,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/api/petcare/users",
-							"protocol": "http",
+							"raw": "{{urlUserService}}/api/petcare/users",
 							"host": [
-								"localhost"
+								"{{urlUserService}}"
 							],
-							"port": "8082",
 							"path": [
 								"api",
 								"petcare",
@@ -248,7 +234,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzU2MjQxLCJleHAiOjE3NDg3NTk4NDF9.kJ5pD0ULSslg42YLAxI_FFgRY7xees5Gw_dPDA48Cbg",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4OTIyMDI1LCJleHAiOjE3NDg5MjU2MjV9.N6SbyK6HXANkuGmBudZZvJ7PNl_FqgcWXjKfrO3yA-o",
 									"type": "string"
 								}
 							]
@@ -256,12 +242,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/api/petcare/user/1",
-							"protocol": "http",
+							"raw": "{{urlUserService}}/api/petcare/user/1",
 							"host": [
-								"localhost"
+								"{{urlUserService}}"
 							],
-							"port": "8082",
 							"path": [
 								"api",
 								"petcare",
@@ -280,7 +264,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzYwMTgyLCJleHAiOjE3NDg3NjM3ODJ9.xLeJemdvncoxeha_pz8rAvPP0VqN9FGmIYMBD2v2wmM",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4OTIyMDI1LCJleHAiOjE3NDg5MjU2MjV9.N6SbyK6HXANkuGmBudZZvJ7PNl_FqgcWXjKfrO3yA-o",
 									"type": "string"
 								}
 							]
@@ -288,12 +272,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/api/petcare/user/detail/1",
-							"protocol": "http",
+							"raw": "{{urlUserService}}/api/petcare/user/detail/1",
 							"host": [
-								"localhost"
+								"{{urlUserService}}"
 							],
-							"port": "8082",
 							"path": [
 								"api",
 								"petcare",
@@ -313,7 +295,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4NzY2NzgzLCJleHAiOjE3NDg3NzAzODN9.DJgDGGEAUcJ-PXr8NZqBxgBv92MHfQCcjYd-VNeb958",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4OTIxNzgyLCJleHAiOjE3NDg5MjUzODJ9.V3rAbCd8XoX4SSKD65-tv40TyG89KmdA38SaYHvvdQo",
 									"type": "string"
 								}
 							]
@@ -321,12 +303,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/api/petcare/veterinarians",
-							"protocol": "http",
+							"raw": "{{urlUserService}}/api/petcare/veterinarians",
 							"host": [
-								"localhost"
+								"{{urlUserService}}"
 							],
-							"port": "8082",
 							"path": [
 								"api",
 								"petcare",
@@ -344,7 +324,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzYwMTgyLCJleHAiOjE3NDg3NjM3ODJ9.xLeJemdvncoxeha_pz8rAvPP0VqN9FGmIYMBD2v2wmM",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4OTIxNzgyLCJleHAiOjE3NDg5MjUzODJ9.V3rAbCd8XoX4SSKD65-tv40TyG89KmdA38SaYHvvdQo",
 									"type": "string"
 								}
 							]
@@ -352,12 +332,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/api/petcare/veterinarian/2",
-							"protocol": "http",
+							"raw": "{{urlUserService}}/api/petcare/veterinarian/2",
 							"host": [
-								"localhost"
+								"{{urlUserService}}"
 							],
-							"port": "8082",
 							"path": [
 								"api",
 								"petcare",
@@ -376,7 +354,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4NzU2NTU3LCJleHAiOjE3NDg3NjAxNTd9.3MTJRPnHAsF4mvoaqbXaSKUUoYOK-HlpAoIpVWLG89c",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4OTIxNzgyLCJleHAiOjE3NDg5MjUzODJ9.V3rAbCd8XoX4SSKD65-tv40TyG89KmdA38SaYHvvdQo",
 									"type": "string"
 								}
 							]
@@ -384,12 +362,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/api/petcare/veterinarian/detail/2",
-							"protocol": "http",
+							"raw": "{{urlUserService}}/api/petcare/veterinarian/detail/2",
 							"host": [
-								"localhost"
+								"{{urlUserService}}"
 							],
-							"port": "8082",
 							"path": [
 								"api",
 								"petcare",
@@ -415,7 +391,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzU4NTk0LCJleHAiOjE3NDg3NjIxOTR9.25FpWxFY8UU_XNSDWFGctiuoL8i140SMHZB7q1P1Ue0",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4OTIxNzgyLCJleHAiOjE3NDg5MjUzODJ9.V3rAbCd8XoX4SSKD65-tv40TyG89KmdA38SaYHvvdQo",
 									"type": "string"
 								}
 							]
@@ -432,12 +408,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8083/api/pets/register",
-							"protocol": "http",
+							"raw": "{{urlPetService}}/api/pets/register",
 							"host": [
-								"localhost"
+								"{{urlPetService}}"
 							],
-							"port": "8083",
 							"path": [
 								"api",
 								"pets",
@@ -455,7 +429,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzU4NTk0LCJleHAiOjE3NDg3NjIxOTR9.25FpWxFY8UU_XNSDWFGctiuoL8i140SMHZB7q1P1Ue0",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4OTIxNzgyLCJleHAiOjE3NDg5MjUzODJ9.V3rAbCd8XoX4SSKD65-tv40TyG89KmdA38SaYHvvdQo",
 									"type": "string"
 								}
 							]
@@ -464,7 +438,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Nina\",\r\n  \"species\": \"Cat\",\r\n  \"breed\": \"Egyptian Mau\",\r\n  \"birthDate\": \"2020-05-01\",\r\n  \"weight\": 3.5,\r\n  \"gender\": \"Female\",\r\n  \"userId\": 1\r\n}\r\n",
+							"raw": "{\r\n  \"name\": \"Nina2\",\r\n  \"species\": \"Cat\",\r\n  \"breed\": \"Egyptian Mau\",\r\n  \"birthDate\": \"2020-05-01\",\r\n  \"weight\": 3.5,\r\n  \"gender\": \"Female\",\r\n  \"userId\": 1\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -472,12 +446,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8083/api/pets/register",
-							"protocol": "http",
+							"raw": "{{urlPetService}}/api/pets/register",
 							"host": [
-								"localhost"
+								"{{urlPetService}}"
 							],
-							"port": "8083",
 							"path": [
 								"api",
 								"pets",
@@ -495,7 +467,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzU4NTk0LCJleHAiOjE3NDg3NjIxOTR9.25FpWxFY8UU_XNSDWFGctiuoL8i140SMHZB7q1P1Ue0",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4OTIyMDI1LCJleHAiOjE3NDg5MjU2MjV9.N6SbyK6HXANkuGmBudZZvJ7PNl_FqgcWXjKfrO3yA-o",
 									"type": "string"
 								}
 							]
@@ -512,12 +484,10 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8083/api/pets/assign-vet",
-							"protocol": "http",
+							"raw": "{{urlPetService}}/api/pets/assign-vet",
 							"host": [
-								"localhost"
+								"{{urlPetService}}"
 							],
-							"port": "8083",
 							"path": [
 								"api",
 								"pets",
@@ -535,7 +505,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzYwMTgyLCJleHAiOjE3NDg3NjM3ODJ9.xLeJemdvncoxeha_pz8rAvPP0VqN9FGmIYMBD2v2wmM",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4OTI3ODcyLCJleHAiOjE3NDg5MzE0NzJ9.EHVjRxiqG3J5zlcGBIGvpExFy7oy5T27DpQpvUuxGUA",
 									"type": "string"
 								}
 							]
@@ -543,12 +513,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8083/api/pets/user/1",
-							"protocol": "http",
+							"raw": "{{urlPetService}}/api/pets/user/1",
 							"host": [
-								"localhost"
+								"{{urlPetService}}"
 							],
-							"port": "8083",
 							"path": [
 								"api",
 								"pets",
@@ -567,7 +535,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzYwMTgyLCJleHAiOjE3NDg3NjM3ODJ9.xLeJemdvncoxeha_pz8rAvPP0VqN9FGmIYMBD2v2wmM",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4OTIxNzgyLCJleHAiOjE3NDg5MjUzODJ9.V3rAbCd8XoX4SSKD65-tv40TyG89KmdA38SaYHvvdQo",
 									"type": "string"
 								}
 							]
@@ -575,12 +543,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8083/api/pets/1/vet/2",
-							"protocol": "http",
+							"raw": "{{urlPetService}}/api/pets/1/vet/2",
 							"host": [
-								"localhost"
+								"{{urlPetService}}"
 							],
-							"port": "8083",
 							"path": [
 								"api",
 								"pets",
@@ -600,7 +566,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzY2OTQyLCJleHAiOjE3NDg3NzA1NDJ9.c9g5p0sMXOHiQgZ_VoPj6MfxjE9Z1zyxgwBy4I25TwE",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4OTIyMDI1LCJleHAiOjE3NDg5MjU2MjV9.N6SbyK6HXANkuGmBudZZvJ7PNl_FqgcWXjKfrO3yA-o",
 									"type": "string"
 								}
 							]
@@ -608,12 +574,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8083/api/pets/vet/2",
-							"protocol": "http",
+							"raw": "{{urlPetService}}/api/pets/vet/2",
 							"host": [
-								"localhost"
+								"{{urlPetService}}"
 							],
-							"port": "8083",
 							"path": [
 								"api",
 								"pets",
@@ -632,7 +596,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVVNFUiIsImlkIjoxLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJzdWIiOiJqb2huZG9lIiwiaWF0IjoxNzQ4NzY2OTQyLCJleHAiOjE3NDg3NzA1NDJ9.c9g5p0sMXOHiQgZ_VoPj6MfxjE9Z1zyxgwBy4I25TwE",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiVkVUIiwiaWQiOjIsInVzZXJuYW1lIjoiZHJqYW5ldmV0Iiwic3ViIjoiZHJqYW5ldmV0IiwiaWF0IjoxNzQ4OTIyMDI1LCJleHAiOjE3NDg5MjU2MjV9.N6SbyK6HXANkuGmBudZZvJ7PNl_FqgcWXjKfrO3yA-o",
 									"type": "string"
 								}
 							]
@@ -640,12 +604,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8083/api/pets/1/user/1",
-							"protocol": "http",
+							"raw": "{{urlPetService}}/api/pets/1/user/1",
 							"host": [
-								"localhost"
+								"{{urlPetService}}"
 							],
-							"port": "8083",
 							"path": [
 								"api",
 								"pets",
