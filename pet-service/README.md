@@ -6,8 +6,6 @@ Este microservicio forma parte del sistema **PetCare**, una plataforma de gesti�
 
 ## 📌 Funcionalidad principal
 
-## 🐾 Funcionalidades principales
-
 ### 1. Registro de Mascotas
 Permite a los usuarios con rol `USER` registrar nuevas mascotas a su nombre.
 
