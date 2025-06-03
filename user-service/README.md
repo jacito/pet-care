@@ -536,6 +536,7 @@ Puedes utilizar esta colección para probar los endpoints del microservicio `aut
 
 🔗 [Ver colección en Postman](https://github.com/jacito/pet-care/blob/425b6883b3da87d7577012c00df7a13f1253b361/PetCare.postman_collection.json)
 
+  ![CollectionPostmant](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/User/postmant.png)
 
 ### 🚀 Arranque del Servicio
 
