@@ -611,4 +611,16 @@ mvn spring-boot:run
 
   ![Arrancar pet-service](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/Pet/run.png)
 
+## 🐋 Docker Hub - Imagen del Servicio `pet-service`
 
+La imagen del servicio **pet-service** ya se encuentra disponible en **Docker Hub** para que puedas realizar pruebas fácilmente.
+
+  ![Image](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/Pet/Image.png)
+
+### 📥 Cómo descargar la imagen
+
+Puedes descargar la imagen ejecutando el siguiente comando en tu terminal:
+
+```bash
+docker pull jacito/pet-service:tagname
+```
