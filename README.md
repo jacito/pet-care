@@ -1,6 +1,6 @@
 # 🐾 PetCare - Proyecto de Microservicios 🐾
 
-**PetCare** es un sistema de microservicios diseñado para gestionar la salud y el cuidado de mascotas. Permite el registro de usuarios, veterinarios y mascotas, además de ofrecer funcionalidades para la gestión de datos como alimentación, paseos y visitas al veterinario. El sistema está compuesto por tres servicios principales: **auth-service**, **user-service**, y **pet-service**.
+**PetCare** es un sistema de microservicios diseñado para gestionar la salud y el cuidado de mascotas. Permite el registro de usuarios, veterinarios y mascotas. El sistema está compuesto por tres servicios principales: **auth-service**, **user-service**, y **pet-service**.
 
 ## 🛠️ Tecnologías
 
