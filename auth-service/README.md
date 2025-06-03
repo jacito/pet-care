@@ -248,6 +248,14 @@ Puedes utilizar esta colección para probar los endpoints del microservicio `aut
 
   ![CollectionPostmant](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/Auth/postmant.png)
 
+- **No se te olvide descargar los Environments**
+🔗 [Ver EnvironmentLocal en Postman](https://github.com/jacito/pet-care/blob/develop/PetCare-Local.postman_environment.json)
+  ![EnvironmentLocal](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/EnvironmentLocal.png)
+
+🔗 [Ver EnvironmentProd en Postman](https://github.com/jacito/pet-care/blob/develop/PetCare-Prod.postman_environment.json)
+  ![EnvironmentProd](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/EnvironmentProd.png)
+  
+
 ### 🚀 Arranque del Servicio
 
 Sigue los siguientes pasos para compilar y ejecutar el microservicio `auth-service`.
