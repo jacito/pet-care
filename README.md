@@ -211,3 +211,66 @@ Recuerda configurar el `secret` para los tokens JWT en el archivo `application.p
 
     ![Flujo Veterinario](https://github.com/jacito/pet-care-imagenes/blob/main/Servicios/DiagramaFlujoVeterinario.jpeg)
 ---
+
+## 🐋 Docker Hub - Imagen del Servicio
+
+Las imagenes de los servicios de PetCare ya se encuentra disponible en **Docker Hub** para que puedas realizar pruebas fácilmente.
+
+![Imagenes](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/Imagenes.png)
+
+### 📥 Cómo descargar las imagen
+
+Puedes descargar la imagen ejecutando el siguiente comando en tu terminal:
+
+```bash
+docker pull jacito/auth-service:tagname
+```
+
+![Imagen auth-service](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/Auth/Image.png)
+
+```bash
+docker pull jacito/user-service:tagname
+```
+![Imagen user-service](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/User/Image.png)
+
+```bash
+docker pull jacito/pet-service:tagname
+```
+![Imagen pet-service](https://raw.githubusercontent.com/jacito/pet-care-imagenes/refs/heads/main/Servicios/Pet/Image.png)
+
+---
+
+## 🎬 Pruebas de Endpoints
+
+Este video muestra pruebas funcionales realizadas a los endpoints principales de los microservicios:
+
+- 🔐 Auth Service (login y registro)
+- 👤 User Service (gestión de usuarios y veterinarios)
+- 🐾 Pet Service (registro, asignación y consulta de mascotas)
+
+[![Ver video de pruebas](https://youtu.be/JPGA_dIUwrw)
+
+
+---
+---
+
+## 📚 Estructura de la Documentación
+
+La documentación de este proyecto está organizada en varias secciones clave para facilitar la navegación y comprensión de los diferentes servicios. Cada sección está enfocada en un aspecto específico del sistema.
+
+### 🌍 Estructura General del Proyecto
+
+La estructura de la documentación está dividida en las siguientes ramas y servicios:
+
+- **main**: Contiene la documentación principal y la visión general del proyecto.
+- **develop**: Sección dedicada a los avances en desarrollo y mejoras continuas. Aquí puedes encontrar la documentación más reciente sobre las características en desarrollo.
+  - **auth-service**: Documentación específica sobre el servicio de autenticación, configuración de JWT y seguridad.
+  - **user-service**: Descripción detallada del servicio que maneja la gestión de usuarios, registro, login y datos de los mismos.
+  - **pet-service**: Detalles sobre el servicio que gestiona el control de mascotas, incluyendo la creación, asignación y consulta de información sobre las mascotas.
+
+Cada una de estas secciones proporciona información específica para su respectivo servicio, facilitando el proceso de integración, pruebas y desarrollo.
+
+¡No dudes en navegar entre las secciones para obtener toda la información que necesitas para trabajar con cada microservicio!
+
+---
+---
